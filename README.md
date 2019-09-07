@@ -33,3 +33,9 @@ and start SPI
 SPI.begin(5,19,27); 
 ```
 
+if want to connect CAT lorawan you need to set DEVEUI more
+
+```
+static const u1_t PROGMEM DEVEUI[8]={ 0x00, 0x00, 0xF2, 0xCA, 0x65, 0xDF, 0x1D, 0x8C };
+void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
+```
