@@ -47,10 +47,6 @@ static unsigned char APPSKEY[16] = { 0x00, 0x00, 0xB2, 0x83, 0x40, 0xE0, 0x5D, 0
 // LoRaWAN end-device address (DevAddr), ie 0x91B375AC  (from staging.thethingsnetwork.org)
 static const u4_t DEVADDR = 0x00001DD7 ; // <-- Change this address for every node!
 
-//static const u1_t PROGMEM DEVEUI[8]={ 0x00, 0x31, 0x35, 0x38, 0x75, 0x37, 0x8F, 0x18 };
-//void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
-
-
 int channel = 0;
 int txInterval = 60;
 
